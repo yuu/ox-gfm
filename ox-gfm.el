@@ -297,7 +297,7 @@ be displayed when `org-export-show-temporary-export-buffer' is
 non-nil."
   (interactive)
   (org-export-to-buffer 'gfm "*Org GFM Export*"
-    async subtreep visible-only nil nil (lambda () (text-mode))))
+    async subtreep visible-only nil nil (lambda () (gfm-mode))))
 
 ;;;###autoload
 (defun org-gfm-convert-region-to-md ()
